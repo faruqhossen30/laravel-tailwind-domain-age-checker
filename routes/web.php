@@ -34,6 +34,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
+Route::get('/',[HomepageController::class, 'homePage'])->name('homepage');
 
 Route::get('/test', function () {
     return view('test');
