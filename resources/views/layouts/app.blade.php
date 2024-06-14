@@ -9,7 +9,7 @@
     <meta name="generator" content="MonodeepSamanta 2.0">
     <link rel="icon" type="image/x-icon" href="{{ asset('MonodeepSamanta.png') }}">
 
-    <title> @yield('title', '')</title>
+    <title> @yield('title', 'Domain Age Checker')</title>
 
 
 

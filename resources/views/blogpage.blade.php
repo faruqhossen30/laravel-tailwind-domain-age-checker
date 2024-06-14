@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Blogs | Domain Age Checker')
 
 @section('content')
 <!-- Card Blog -->

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'About | Domain Age Checker')
 
 @section('content')
     <!-- Contact Us -->

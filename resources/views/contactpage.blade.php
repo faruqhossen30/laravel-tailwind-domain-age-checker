@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Contact | Domain Age Checker')
 @section('content')
     <!-- Contact Us -->
     <div class="container mx-auto min-h-screen px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
