@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutpageController;
 use App\Http\Controllers\BlogpageController;
 use App\Http\Controllers\ContactpageController;
 use App\Http\Controllers\HomepageController;
@@ -25,6 +26,7 @@ Route::get('/',[HomepageController::class, 'homePage'])->name('homepage');
 Route::get('/blogs',[BlogpageController::class, 'blogPage'])->name('blogpage');
 Route::get('/blog/{slug}',[BlogpageController::class, 'singleBlog'])->name('singleblog');
 Route::get('contact',[ContactpageController::class, 'index'])->name('contactpage');
+Route::get('about',[AboutpageController::class, 'index'])->name('aboutpage');
 
 Route::get('/test', function () {
     return view('test');

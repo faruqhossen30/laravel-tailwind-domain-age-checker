@@ -39,7 +39,7 @@
                     </p>
                     <p>
                         <a class="inline-flex gap-x-2 text-gray-800 hover:text-gray-200 dark:text-gray-400 dark:hover:text-neutral-200" href="#">Careers</a>
-                        <span class="inline ms-1 text-xs bg-blue-700 text-gray-800 py-1 px-2 rounded-lg">We're hiring</span>
+                        <span class="inline ms-1 text-xs bg-gray-100 dark:bg-gray-500 text-gray-800 py-1 px-2 rounded-lg">We're hiring</span>
                     </p>
                     <p>
                         <a class="inline-flex gap-x-2 text-gray-800 hover:text-gray-200 dark:text-gray-400 dark:hover:text-neutral-200" href="#">Customers</a>
@@ -49,7 +49,7 @@
             <!-- End Col -->
 
             <div class="col-span-2">
-                <h4 class="font-semibold text-gray-800">Stay up to date</h4>
+                <h4 class="font-semibold text-gray-800 dark:text-gray-400">Stay up to date</h4>
                 <form>
                     <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-1 dark:bg-gray-400">
                         <div class="w-full">
@@ -58,7 +58,7 @@
                                 class="py-3 border border-gray-500 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-transparent dark:text-gray-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                 placeholder="Enter your email" />
                         </div>
-                        <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-gray-800 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                        <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-100 dark:bg-gray-500 text-gray-800 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                             href="#">
                             Subscribe
                         </a>

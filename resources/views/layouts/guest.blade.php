@@ -17,9 +17,9 @@
     <body class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
-                <a href="#">
+                <a href="{{route('homepage')}}">
                     {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
-                    <img src="{{asset('logo.jpg')}}" alt="Mono Deep" class="w-20 h-20 rounded-full ring-2">
+                    <img src="{{asset('domain-age-checker-dark.png')}}" alt="Mono Deep" class="h-10">
                 </a>
             </div>
 
