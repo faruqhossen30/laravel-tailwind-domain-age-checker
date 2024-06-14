@@ -1,22 +1,9 @@
 <?php
 
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\AboutpageController;
-use App\Http\Controllers\Ajax\GalleryAjaxController;
-use App\Http\Controllers\ArticlesController;
-use App\Http\Controllers\BlogComtroller;
 use App\Http\Controllers\BlogpageController;
-use App\Http\Controllers\ConditionController;
-use App\Http\Controllers\ContuctController;
-use App\Http\Controllers\FaqController;
+use App\Http\Controllers\ContactpageController;
 use App\Http\Controllers\HomepageController;
-use App\Http\Controllers\PortfoliopageController;
-use App\Http\Controllers\PricepageController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ReviewpageController;
-use App\Http\Controllers\ReviewSubmitController;
-use App\Http\Controllers\ServicepageController;
-use App\Http\Controllers\TearmsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,6 +22,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',[HomepageController::class, 'homePage'])->name('homepage');
+Route::get('/blogs',[BlogpageController::class, 'blogPage'])->name('blogpage');
+Route::get('/blog/{slug}',[BlogpageController::class, 'singleBlog'])->name('singleblog');
+Route::get('contact',[ContactpageController::class, 'index'])->name('contactpage');
 
 Route::get('/test', function () {
     return view('test');
