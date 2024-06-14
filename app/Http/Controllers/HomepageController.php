@@ -24,16 +24,32 @@ class HomepageController extends Controller
 
             // print_r($look->whoislookup('binarywebtools.com'));
             $whoisinfo = $look->whoislookup($exatDomain);
+
+            // dd($whoisinfo);
+
+
             $age = $domainage->age($exatDomain);
 
 
             $rows = explode("\n", $whoisinfo);
+            // dd($rows);
+
+
             $arr = array();
             foreach ($rows as $row) {
                 $posOfFirstColon = strpos($row, ":");
+
+
                 $arr[substr($row, 0, $posOfFirstColon)] = trim(substr($row, $posOfFirstColon + 1));
             }
 
+            // dd($arr);
+
+            $data = collect($arr);
+
+            // return $data->keys();
+
+            // dd($data);
             // return $whoisinfo;
 
 

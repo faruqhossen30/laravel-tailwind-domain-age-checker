@@ -8,6 +8,7 @@
 #	License: GPL 3.0, @see http://www.gnu.org/licenses/gpl-3.0.html
 ########################################################################
 namespace App\Lib;
+
 class WhoisLocup
 {
     private $WHOIS_SERVERS = array(
@@ -164,6 +165,10 @@ class WhoisLocup
             $domain_parts = explode(".", $domain);
             $tld = strtolower(array_pop($domain_parts));
             $server = $this->WHOIS_SERVERS[$tld][0];
+
+
+
+
             if (!$server) {
                 return "Error: No appropriate Whois server found for $domain domain!";
             }
@@ -179,8 +184,12 @@ class WhoisLocup
     private function queryWhois($server, $domain)
     {
         $fp = @fsockopen($server, 43, $errno, $errstr, 20) or die("Socket Error " . $errno . " - " . $errstr);
+
+
         if ($server == "whois.verisign-grs.com")
             $domain = "=" . $domain;
+
+
         fputs($fp, $domain . "\r\n");
         $out = "";
         while (!feof($fp)) {
